@@ -3,7 +3,6 @@ import React, { Component } from "react";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 
-//Hier muss nach dem hinzufügen wieder zur EssenDetail Seite weitergeleitet werden
 export default class EditEssen extends Component {
   constructor(props) {
     super(props);

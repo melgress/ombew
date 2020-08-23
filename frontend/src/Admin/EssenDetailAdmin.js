@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Button } from "react-bootstrap";
-import { Link, Route, BrowserRouter as Router } from "react-router-dom";
-import EditEssen from "./EditEssen";
+import { Link } from "react-router-dom";
 
 export default class EssenDetailAdmin extends Component {
   constructor(props) {
@@ -78,13 +77,9 @@ export default class EssenDetailAdmin extends Component {
                 </td>
 
                 <td>
-                  <Router>
-                    <Route render={(props) => <EditEssen {...props} />}>
-                      <Link className="edit-link" to={"/EditEssen/" + essen.id}>
-                        <Button>Edit</Button>
-                      </Link>
-                    </Route>
-                  </Router>
+                  <Link className="edit-link" to={"/EditEssen/" + essen.id}>
+                    <Button>Edit</Button>
+                  </Link>
                 </td>
               </tr>
             ))}
